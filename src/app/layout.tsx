@@ -10,7 +10,7 @@ const comfartaa = Comfortaa({
 });
 
 export const metadata: Metadata = {
-  title: "Levi Deang",
+  title: "Levi Deang - Resume",
   description: "Levi Deang's resume.",
   keywords: ["React", "NextJS", "NodeJS", "Software developer"],
 };
