@@ -1,5 +1,6 @@
 import { Comfortaa } from "next/font/google";
 import "./globals.css";
+import { Metadata } from "next";
 
 const comfartaa = Comfortaa({
   subsets: ["latin"],
@@ -8,11 +9,12 @@ const comfartaa = Comfortaa({
   weight: "400",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Levi Deang",
-  description: "Levi Deang's resume",
+  description: "Levi Deang's resume.",
+  keywords: [ "React", "NextJS", "NodeJS", "Software developer"  ]
 };
-// bg-gradient-to-tr from-green-500 via-blue-600 to-blue
+//
 export default function RootLayout({
   children,
 }: {
@@ -21,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${comfartaa.className} px-2 bg-zinc-700 py-6 -700 min-h-screen `}
+        className={`${comfartaa.className} p-2  md:py-6 min-h-screen bg-gradient-to-br from-sky-500 via-sky-600 to-blue-600`}
       >
         {children}
       </body>

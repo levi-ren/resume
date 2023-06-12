@@ -1,14 +1,15 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <main
-      className="max-w-5xl m-auto bg-white/90 backdrop-blur-md rounded shadow-md p-6"
+      className="max-w-5xl m-auto bg-white/90 backdrop-blur-md rounded shadow-lg p-6 relative"
       id="main"
     >
       <header className="text-sm flex gap-6 flex-col md:flex-row">
         <div className="flex-[2_1_0%]">
-          <h1 className="text-4xl">Levi Deang</h1>
+          <h1 className="text-6xl text-sky-600">Levi Deang</h1>
           <p className="pt-4 max-w-lg">
             Passionate front-end software engineer committed to delivering
             promised results and remaining true to a unique artistic vision.
@@ -168,11 +169,21 @@ export default function Home() {
           </ul>
 
           <b className="text-sky-600 block mt-4">EDUCATION</b>
-          <b className="block mt-1">Tomas del Rosario College</b>
-          <p className="font-medium mt-1">BS Computer Science</p>
-          <time className="block mt-1">July 2015 - May 2019</time>
+          <b className="block mt-1 text-black">Tomas del Rosario College</b>
+          <p className="font-medium text-black">BS Computer Science</p>
+          <time className="block mt-1 text-sm">July 2015 - May 2019</time>
         </article>
       </section>
+
+      <Link
+        rel="noopener noreferrer"
+        className="absolute bottom-4 right-4 rounded-full p-2 shadow-lg bg-white animate-[bounce_2s_infinite]"
+        href="/Levi_Deang_Resume.pdf"
+        target="_blank"
+        aria-label="Download resume button"
+      >
+        <Image src="/download.png" alt="download icon" width={32} height={32} />
+      </Link>
     </main>
   );
 }
