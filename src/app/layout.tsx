@@ -11,8 +11,25 @@ const comfartaa = Comfortaa({
 
 export const metadata: Metadata = {
   title: "Levi Deang - Resume",
-  description: "Levi Deang's resume.",
+  description:
+    "My online resume. An digital document providing a summary of my work experience, skills, projects, and relevant qualifications.",
   keywords: ["React", "NextJS", "NodeJS", "Software developer"],
+  applicationName: "Resume V3",
+  openGraph: {
+    title: "Levi Deang - Resume",
+    description:
+      "My online resume. An digital document providing a summary of my work experience, skills, projects, and relevant qualifications.",
+    url: "https://resume.levideang.dev/",
+    images: "/resume.png",
+  },
+  twitter: {
+    title: "Levi Deang - Resume",
+    description:
+      "My online resume. An digital document providing a summary of my work experience, skills, projects, and relevant qualifications.",
+    card: "summary_large_image",
+    site: "https://resume.levideang.dev/",
+    images: "/resume.png",
+  },
 };
 
 export default function RootLayout({
