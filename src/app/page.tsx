@@ -113,7 +113,13 @@ export default function Home() {
           <ul className="space-y-4 mt-2">
             <li className="space-y-2">
               <div>
-                <b className="inline-block text-black">Portfolio</b>
+                <Link
+                  href="https://www.levideang.dev/"
+                  target="_blank"
+                  className="inline-block text-black"
+                >
+                  Portfolio
+                </Link>
                 <p className="text-sm">Showcase</p>
               </div>
               <p className="">
@@ -123,7 +129,13 @@ export default function Home() {
             </li>
             <li className="space-y-2">
               <div>
-                <b className="inline-block text-black">Parcel</b>
+                <Link
+                  href="https://parcel-v2.vercel.app/"
+                  target="_blank"
+                  className="inline-block text-black"
+                >
+                  Parcel
+                </Link>
                 <p className="text-sm">E-commerce</p>
               </div>
               <p className="">
@@ -134,7 +146,13 @@ export default function Home() {
             </li>
             <li className="space-y-2">
               <div>
-                <b className="inline-block text-black">Tempo</b>
+                <Link
+                  href="https://weather-app-v3-sepia.vercel.app/"
+                  target="_blank"
+                  className="inline-block text-black"
+                >
+                  Tempo
+                </Link>
                 <p className="text-sm">Weather app</p>
               </div>
               <p className="">
