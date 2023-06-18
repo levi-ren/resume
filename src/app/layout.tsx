@@ -9,23 +9,36 @@ const comfartaa = Comfortaa({
   weight: "400",
 });
 
+const description =
+  "Welcome to my online resume. A digital document providing a summary of my work experience, skills, projects, and other relevant qualifications.";
+
 export const metadata: Metadata = {
-  title: "Levi Deang - Resume",
-  description:
-    "My online resume. An digital document providing a summary of my work experience, skills, projects, and relevant qualifications.",
-  keywords: ["React", "NextJS", "NodeJS", "Software developer"],
+  title: "Levi Deang | Senior Software Engineer | Resume",
+  description,
+  keywords: [
+    "React",
+    "NextJS",
+    "NodeJS",
+    "Software developer",
+    "Resume",
+    "CV",
+    "Front-end developer",
+    "Developer",
+    "Frontend",
+  ],
+  alternates: {
+    canonical: "https://resume.levideang.dev",
+  },
   applicationName: "Resume V3",
   openGraph: {
     title: "Levi Deang - Resume",
-    description:
-      "My online resume. An digital document providing a summary of my work experience, skills, projects, and relevant qualifications.",
+    description,
     url: "https://resume.levideang.dev/",
     images: "/resume.png",
   },
   twitter: {
     title: "Levi Deang - Resume",
-    description:
-      "My online resume. An digital document providing a summary of my work experience, skills, projects, and relevant qualifications.",
+    description,
     card: "summary_large_image",
     site: "https://resume.levideang.dev/",
     images: "/resume.png",
