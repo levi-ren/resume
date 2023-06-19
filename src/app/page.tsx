@@ -17,7 +17,6 @@ export default function Home() {
         </div>
         <nav className="flex-1 flex flex-col justify-center">
           <Link href="mailto:arron.levi1@gmail.com">arron.levi1@gmail.com</Link>
-          <Link href="tel:+639230225111">+63 923 022 5111</Link>
           <Link target="_blank" href="https://github.com/levi-ren">
             github.com/levi-ren
           </Link>
